@@ -26,4 +26,11 @@ describe('fibonnaci', () => {
       expect(e).toEqual(new Error('invalid argument'));
     }
   });
+  it('should throw if passed invalid argument', () => {
+    try {
+      fib("abc");
+    } catch(e) {
+      expect(e).toEqual(new Error('invalid argument'));
+    }
+  });
 });

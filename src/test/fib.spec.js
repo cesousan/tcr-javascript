@@ -23,7 +23,6 @@ describe('fibonnaci', () => {
     try {
       fib(-1);
     } catch(e) {
-      console.log("CATCHED");
       expect(e).toEqual(new Error('invalid argument'));
     }
   });

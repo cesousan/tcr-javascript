@@ -4,7 +4,10 @@
   "description": "a first attempt to TCR in javascript",
   "main": "index.js",
   "scripts": {
-    "test": "./scripts/test.sh"
+    "tcr": "./scripts/tcr.sh",
+    "test": "concurrently collaborate continuous",
+    "collaborate": "./scripts/collaborate.sh",
+    "continuous": "./scripts/continuous.sh"
   },
   "repository": {
     "type": "git",
@@ -14,5 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2"
   }
 }

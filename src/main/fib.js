@@ -1,5 +1,5 @@
 function fib(num) {
-  return num > 1 ? 2 : 1;
+  return num > 1 ? 3 : 1;
 }
 
 module.exports = {

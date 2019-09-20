@@ -1,4 +1,4 @@
-const fib = require('src/main/fib').fib;
+const fib = require('../main/fib').fib;
 
 describe('fibonnaci', () => {
   

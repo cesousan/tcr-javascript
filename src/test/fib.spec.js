@@ -18,5 +18,12 @@ describe('fibonnaci', () => {
   });
   it('should return 13 if passsed 7', () => {
     expect(fib(7)).toEqual(13);
-  })
+  });
+  it('should throw if passed negative number', () => {
+    try {
+      fib(-1);
+    } catch(e) {
+      expect(e).toEqual(new Error('invalid argument'));
+    }
+  });
 });

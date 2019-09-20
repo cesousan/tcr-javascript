@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tcr": "./scripts/tcr.sh",
-    "test": "concurrently collaborate continuous",
+    "watch-tcr": "onchange src/**/*.js -- yarn tcr",
+    "tcr-live": "concurrently \"yarn collaborate\" \"yarn watch-tcr\"",
     "collaborate": "./scripts/collaborate.sh",
     "continuous": "./scripts/continuous.sh"
   },
@@ -19,6 +20,7 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
-    "concurrently": "^4.1.2"
+    "concurrently": "^4.1.2",
+    "onchange": "^6.1.0"
   }
 }

@@ -12,5 +12,8 @@ describe('fibonnaci', () => {
 
   it('should return 1 if passed 2', () => {
     expect(fib(2)).toEqual(1)
-  })
+  });
+  it('should return 2 if passed 3', () => {
+    expect(fib(3)).toEqual(2);
+  });
 });

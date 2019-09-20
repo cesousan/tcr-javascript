@@ -1,9 +1,18 @@
 {
   "name": "tcr-javascript",
   "version": "1.0.0",
-  "description": "a first attempt to tcr in javascript",
+  "description": "a first attempt to TCR in javascript",
   "main": "index.js",
-  "repository": "git@github.com:cesousan/tcr-javascript.git",
+  "scripts": {
+    "test": "./scripts/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cesousan/tcr-javascript.git"
+  },
   "author": "Cesousan <cesar.sabater@tiny-atom.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }

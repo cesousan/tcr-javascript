@@ -1,0 +1,9 @@
+{
+  "name": "tcr-javascript",
+  "version": "1.0.0",
+  "description": "a first attempt to tcr in javascript",
+  "main": "index.js",
+  "repository": "git@github.com:cesousan/tcr-javascript.git",
+  "author": "Cesousan <cesar.sabater@tiny-atom.com>",
+  "license": "MIT"
+}

@@ -29,7 +29,7 @@ describe('fibonnaci', () => {
   it('should throw if passed invalid argument', () => {
     try {
       fib("abc");
-    } catch(e) {
+    } catch(e) { 
       expect(e).toEqual(new Error('invalid argument'));
     }
   });

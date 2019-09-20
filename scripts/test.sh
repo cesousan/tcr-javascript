@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-jest && git commit -am working || git checkout HEAD -- "src/^(?!.*\.spec).*$"
+jest && git commit -am working || git checkout HEAD -- "src/main/*"

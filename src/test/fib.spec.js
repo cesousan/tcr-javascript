@@ -1,4 +1,4 @@
-const fib = require('./fib').fib;
+const fib = require('src/main/fib').fib;
 
 describe('fibonnaci', () => {
   
@@ -9,4 +9,8 @@ describe('fibonnaci', () => {
   it('should return 1 if passed 1', () => {
     expect(fib(1)).toEqual(1)
   });
+
+  it('should return 3 if passed 2', () => {
+    expect(fib(2)).toEqual(3)
+  })
 });

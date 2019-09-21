@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tcr": "./scripts/tcr.sh",
-    "watch-tcr": "onchange src/main/*.js -- yarn tcr",
+    "watch-tcr": "onchange src/**/*.js -- yarn tcr",
     "tcr-live": "concurrently \"yarn tcr\" \"yarn collaborate\" \"yarn watch-tcr\"",
     "collaborate": "./scripts/collaborate.sh",
     "continuous": "./scripts/continuous.sh"

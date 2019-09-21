@@ -13,4 +13,4 @@ describe('basic sort', () => {
   it('should chose sort order', () => {
     expect(sort('azerty', false)).toEqual('zytrea');
   });
-});
+}); 

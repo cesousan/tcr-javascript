@@ -10,7 +10,7 @@ describe('basic sort', () => {
   it('should sort strings', () => {
     expect(sort('azerty')).toEqual('aertyz')
   }) 
-  // it('should chose sort order', () => {
-  //   expect(sort('azerty', false)).toEqual('zytrea');
-  // });
-})
+  it('should chose sort order', () => {
+    expect(sort('azerty', false)).toEqual('zytrea');
+  });
+});

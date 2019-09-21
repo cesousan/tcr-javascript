@@ -11,7 +11,7 @@ function sortString(str, order) {
 
 function sortArray(arr, order) {
   return arr.sort((a, b) => order === false ? b - a : a - b);
-}
+} 
 
 module.exports = {
   sort 

@@ -12,5 +12,13 @@ describe('basic sort', () => {
   }) 
   it('should chose sort order', () => {
     expect(sort('azerty', false)).toEqual('zytrea');
-  }); 
+  });
+  it('should throw error if not provided an array or string', () => {
+    try {
+      sort(null);
+    } catch(e) {
+      expect(e).toEqual(new Error('can\'t sort!'));
+    }
+
+  });
 }); 

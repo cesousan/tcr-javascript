@@ -7,7 +7,10 @@ describe('basic sort', () => {
   it('should sort [1,2,8,69,7,5]', () => {
     expect(sort([1,2,8,69,7,5])).toEqual([1,2,5,7,8,69]);
   })
-  it('should sort strings', () => {
-    expect(sort('azerty')).toEqual('aertyz')
-  })
+  // it('should sort strings', () => {
+  //   expect(sort('azerty')).toEqual('aertyz')
+  // })
+  // it('should chose sort order', () => {
+  //   expect(sort('azerty', false)).toEqual('zytrea');
+  // });  
 })

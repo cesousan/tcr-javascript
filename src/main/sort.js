@@ -6,7 +6,7 @@ function sort(el, sortOrder) {
   } else {
     return typeof el === 'string'
     ? el.split('').sort().reverse().join('')
-    : el.sort((a, b) => b - a); 
+    : el.sort((a, b) => b - a);
   }
 }
 

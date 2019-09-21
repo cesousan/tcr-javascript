@@ -35,4 +35,4 @@ describe('basic sort', () => {
       expect(e).toEqual(new Error('can\'t sort!'));
     }
   });
-}); 
+});

@@ -1,2 +1,2 @@
 n=$(git log --pretty=format:'%H||%s' | grep '||working' | wc -l)
-git reset --soft HEAD~$n && git commit $1
+git reset --soft HEAD~$n && git commit -m "$1"

@@ -9,5 +9,5 @@ describe('basic sort', () => {
   })
   it('should sort strings', () => {
     expect(sort('azerty')).toEqual('aertyz')
-  }) 
+  })
 })

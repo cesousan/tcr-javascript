@@ -3,7 +3,7 @@ function fib(num) {
     throw new Error('invalid argument');
   }
   if(num < 2) {
-    return num;
+    return num; 
   }
   return fib(num - 1) + fib(num - 2);
 }

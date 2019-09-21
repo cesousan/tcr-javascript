@@ -1,18 +1,12 @@
 function sort(el, sortOrder) {
-  if(sortOrder !== false) {
-    return typeof el === 'string'
-    ? el.split('').sort().join('')
-    : el.sort((a, b) => a - b);  
-  } else {
-    return typeof el === 'string'
-    ? el.split('').sort().reverse().join('')
-    : el.sort((a, b) => b - a);
-  }
+  if(typeof el === 'string') return sortString(el, sortOrder);
+  if(Array.isArray(el)) return sortArray(el, sortOrder);
+  throw new Error('can\'t sort!');
 }
 
 function sortString(str, order) {
   const strArr = str.split('').sort();
-  return order === false ? strArr.reverse().join() : strArr.join();
+  return order === false ? strArr.reverse().join('') : strArr.join('');
 }
 
 function sortArray(arr, order) {
@@ -21,4 +15,4 @@ function sortArray(arr, order) {
 
 module.exports = {
   sort 
-}; 
+};

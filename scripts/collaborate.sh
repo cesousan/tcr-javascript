@@ -2,5 +2,5 @@
 while true
 do
     git pull --rebase
-    git push origin master
+    git push
 done

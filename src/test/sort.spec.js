@@ -26,7 +26,7 @@ describe('basic sort', () => {
     }
     try {
       sort(true);
-    } catch(e) {
+    } catch(e) { 
       expect(e).toEqual(new Error('can\'t sort!'));
     }
     try {

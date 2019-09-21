@@ -19,5 +19,20 @@ describe('basic sort', () => {
     } catch(e) {
       expect(e).toEqual(new Error('can\'t sort!'));
     }
+    try {
+      sort(undefined);
+    } catch(e) {
+      expect(e).toEqual(new Error('can\'t sort!'));
+    }
+    try {
+      sort(true);
+    } catch(e) {
+      expect(e).toEqual(new Error('can\'t sort!'));
+    }
+    try {
+      sort({});
+    } catch(e) {
+      expect(e).toEqual(new Error('can\'t sort!'));
+    }
   });
 }); 

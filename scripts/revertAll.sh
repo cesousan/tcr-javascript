@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-jest
+git reset --hard

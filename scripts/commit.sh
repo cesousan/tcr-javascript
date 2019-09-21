@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-git commit -am working
+git add -A && git commit -m working

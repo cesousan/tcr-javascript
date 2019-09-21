@@ -6,4 +6,4 @@ function sort(el) {
 
 module.exports = {
   sort
-};
+}; 
